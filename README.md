@@ -30,6 +30,7 @@ but I Installed React-Query as it has some advantages
 -  app.tsx consists routing and theme related stuff
 -  Added meta data and favicon for seo purspose, to show current page and icon on browser tabs via Layout Component
 -  In styles added container and dot related css to make it responsive in bigger screens ans small screens
+-  Just to differentiate between conatiner and body, added different color to container 
 -  the learn and shop page has data related to specific car
 -  In home page added a genric search component which can filter even all fields ["id", "bodyType", "modelName", "modelType"] together
 -  In home page added select filter to select specific car and list data
