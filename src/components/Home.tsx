@@ -33,31 +33,25 @@ const HomePage: React.FC = () => {
   useEffect(() => {
     if (data) {
       setCars(
-        data.filter((car) =>
-          genericSearch(
-            car,
-            ["id", "bodyType", "modelName", "modelType"],
-            searchQuery,
-            false
+        data
+          .filter((car) =>
+            genericSearch(
+              car,
+              ["id", "bodyType", "modelName", "modelType"],
+              searchQuery,
+              false
+            )
           )
-        )
+          .filter((car) =>
+            genericFilter(
+              car,
+              ["id", "bodyType", "modelName", "modelType"],
+              filterQuery
+            )
+          )
       );
     }
-  }, [data, , searchQuery]);
-
-  useEffect(() => {
-    if (data) {
-      setCars(
-        data.filter((car) =>
-          genericFilter(
-            car,
-            ["id", "bodyType", "modelName", "modelType"],
-            filterQuery
-          )
-        )
-      );
-    }
-  }, [data, filterQuery]);
+  }, [data, filterQuery, searchQuery]);
 
   const scroll = (scrollOffset: number) => {
     if (ref.current) {

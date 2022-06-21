@@ -22,7 +22,7 @@
      });
    }, [])
 ```
-but I Installed react-Query as it has some advantages
+but I Installed React-Query as it has some advantages
 => Installed and used vcc-ui as recommended in bonus steps
 => Installed some liniting packages like prettier and added to scripts
 
@@ -35,5 +35,8 @@ but I Installed react-Query as it has some advantages
 => In home page added select filter to select specific car and list data
 => Create custom Carousel type component without installing any package. 
 => The arrows will be shown in large screens. The left arrow won't be visible at the start, the right arrow wont be visible at the end and the scroll is smooth scroll, we dont need to click on the section and drag, just drag is enough
+=> If less than 4 vehicles, the arrows won't be shown in destop mode
 => The Dot loaders are only visible in small deveices, where you can click on dots to scroll or you can directly scroll smoothly
 => created custom hooks, used memo, useEffect, utils, types, genric components and reusable modules.
+
+=> Deployed to vercel https://project-volvo.vercel.app/, which i will disable once it is reviewed 

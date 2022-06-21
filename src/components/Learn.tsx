@@ -20,9 +20,7 @@ const Learn = () => {
         marginTop: "20px",
       }}
     >
-      <h1>
-        Learn Page
-      </h1>
+      <h1>Learn Page</h1>
       <Text extend={{ color: theme.color.foreground.primary }}>{id}</Text>
       {data
         ?.filter((car) => genericFilter(car, ["id"], id as string))
