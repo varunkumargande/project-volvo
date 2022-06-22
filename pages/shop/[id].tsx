@@ -9,7 +9,7 @@ function ShopPage() {
 
   return ( 
     <Layout
-      siteTitle = {id as string || ''}
+      siteTitle = {`Shop ${id as string || ''}`}
       siteDescription= {`Shop ${id}`}
     >
       <Shop/>

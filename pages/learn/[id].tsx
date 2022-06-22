@@ -9,7 +9,7 @@ const LearnPage = () => {
 
   return (
     <Layout
-      siteTitle={id as string || ''}
+      siteTitle={`Learn ${id as string || ''}`}
       siteDescription={`Learn ${id}`}
     >
       <Learn />
