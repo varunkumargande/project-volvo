@@ -11,7 +11,7 @@ export default function genericFilter<T>(
     const value = object[property];
 
     if (typeof value === "string" || typeof value === "number") {
-      return value.toString().toLowerCase() === query.toLowerCase();
+      return value.toString() === query;
     }
 
     return false;

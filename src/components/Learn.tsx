@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import useCars from "../hooks/useCars";
 import genericFilter from "../utils/genericFilter";
 import Image from "next/image";
+import Header from "./Header";
 
 const Learn = () => {
   const theme = useTheme();
@@ -20,7 +21,7 @@ const Learn = () => {
         marginTop: "20px",
       }}
     >
-      <h1>Learn Page</h1>
+      <Header isActive={"learn"} id={id as string}></Header>
       <Text extend={{ color: theme.color.foreground.primary }}>{id}</Text>
       {data
         ?.filter((car) => genericFilter(car, ["id"], id as string))

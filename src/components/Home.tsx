@@ -140,7 +140,7 @@ const HomePage: React.FC = () => {
                   >
                     {car.bodyType.toUpperCase()}
                   </Text>
-                  <View extend={{ flexDirection: "row" }}>
+                  <View direction={"row"}>
                     <Text
                       subStyle="emphasis"
                       extend={{
