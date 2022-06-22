@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import { SelectInput } from "vcc-ui";
-import { CarObject } from "../../types/data";
+import { CarObject } from "../../../types/data";
 
 export interface IFiltersProps {
   setFilterQuery: (searchQuery: string) => void;

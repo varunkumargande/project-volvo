@@ -1,7 +1,7 @@
 import React, { memo } from "react";
-import Layout from "../../src/components/Layout";
+import Layout from "../../src/components/Generic/Layout";
 import { useRouter } from 'next/router'
-import Shop from "../../src/components/Shop";
+import Shop from "../../src/components/Shop/Shop";
 
 function ShopPage() {
   const router = useRouter()

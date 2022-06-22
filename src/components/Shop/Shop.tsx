@@ -1,10 +1,10 @@
 import React, { memo } from "react";
 import { useTheme, View, Text } from "vcc-ui";
 import { useRouter } from "next/router";
-import useCars from "../hooks/useCars";
-import genericFilter from "../utils/genericFilter";
+import useCars from "../../hooks/useCars";
+import genericFilter from "../../utils/genericFilter";
 import Image from "next/image";
-import Header from "./Header";
+import Header from "../DynamicPages/Header";
 
 const Shop = () => {
   const theme = useTheme();

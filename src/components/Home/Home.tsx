@@ -2,14 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import { Flex, Spinner, useTheme, View, Text, Link } from "vcc-ui";
 import Image from "next/image";
 
-import { SearchInput } from "./SearchInput";
-import { Filters } from "./Filters";
-import { CarObject } from "../../types/data";
-import genericSearch from "../utils/genericSearch";
-import genericFilter from "../utils/genericFilter";
-import CarouselDotsRender from "./Carousel/CarouselDotsRender";
-import CarouselArrowsRender from "./Carousel/CarouselArrowsRender";
-import useCars from "../hooks/useCars";
+import { SearchInput } from "../Generic/SearchInput";
+import { Filters } from "../Generic/Filters";
+import { CarObject } from "../../../types/data";
+import genericSearch from "../../utils/genericSearch";
+import genericFilter from "../../utils/genericFilter";
+import CarouselDotsRender from "../Carousel/CarouselDotsRender";
+import CarouselArrowsRender from "../Carousel/CarouselArrowsRender";
+import useCars from "../../hooks/useCars";
 
 const HomePage: React.FC = () => {
   const theme = useTheme();

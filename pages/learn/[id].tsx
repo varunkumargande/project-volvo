@@ -1,7 +1,7 @@
 import React, { memo } from "react";
-import Layout from "../../src/components/Layout";
+import Layout from "../../src/components/Generic/Layout";
 import { useRouter } from 'next/router'
-import Learn from "../../src/components/Learn";
+import Learn from "../../src/components/Learn/Learn";
 
 const LearnPage = () => {
   const router = useRouter()
