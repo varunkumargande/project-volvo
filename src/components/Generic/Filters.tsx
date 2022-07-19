@@ -26,7 +26,7 @@ export const Filters = (props: IFiltersProps) => {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       >
-        <option value="">Select</option>
+        <option value="">Select All</option>
         {props.data.map((item) => (
           <option key={item.modelName + item.id} value={item.id}>
             {item.modelName}
