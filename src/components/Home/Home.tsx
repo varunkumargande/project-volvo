@@ -160,7 +160,7 @@ const HomePage: React.FC = () => {
                       src={car.imageUrl}
                       alt={car.modelName}
                       width="100%"
-                      height="100%"
+                      height="75%"
                       layout="responsive"
                       objectFit="contain"
                     />
