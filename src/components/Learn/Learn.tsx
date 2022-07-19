@@ -41,9 +41,9 @@ const Learn = () => {
                 src={car.imageUrl}
                 alt={car.modelName}
                 width="100%"
-                height="100%"
+                height="75%"
                 layout="responsive"
-                objectFit="fill"
+                objectFit="contain"
               />
             </div>
           </div>
