@@ -156,12 +156,13 @@ const HomePage: React.FC = () => {
                   </View>
                   <div style={{ marginTop: "10px" }}>
                     <Image
+                      className="cars"
                       src={car.imageUrl}
                       alt={car.modelName}
                       width="100%"
                       height="100%"
                       layout="responsive"
-                      objectFit="fill"
+                      objectFit="contain"
                     />
                   </div>
                   <Flex
